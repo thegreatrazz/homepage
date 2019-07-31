@@ -1,0 +1,214 @@
+
+/* @import url('https://rsms.me/inter/inter.css');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,700|IBM+Plex+Serif:400,400i,700,700i&display=swap'); */
+
+:root {
+    /* Colour vars */
+    --color-background: #FAFAFA;
+    --color-faded: rgba(255, 255, 255, .5);
+    --color-foreground: #212121;
+    --color-link: rgb(74,20,140);
+    --background-blur: url(backgroundb-light.jpg);
+
+    /* Font vars */
+    --font-text: "Inter", sans-serif;
+    --font-code: "Iosevka", monospace;
+
+    /* Get going */
+    font-family: var(--font-text);
+    font-size: 16px;
+    background: var(--color-background);
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-position: center;
+    color: var(--color-foreground);
+    letter-spacing: -0.011em;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    min-height: 100vh;
+}
+
+/* Center container */
+
+.container {
+    width: 75%;
+    min-width: 300px;
+    margin: auto;
+}
+
+/* Links */
+
+a {
+    color: var(--color-link);
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    text-decoration: underline;
+}
+
+/* Headings */
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    margin: 0.5em 0;
+}
+
+h1 { font-size: 2em;    }
+h2 { font-size: 1.75em; }
+h3 { font-size: 1.5em;  }
+h4 { font-size: 1.25em; }
+h5 { font-size: 1em;    }
+h6 { font-size: 0.8em;  }
+
+/* Code */
+
+code {
+    font-family: var(--font-code);
+}
+
+pre {
+    font-family: var(--font-code);
+    background: var(--color-background);
+    color: var(--color-foreground);
+    padding: 8px;
+    border: 1px solid var(--color-faded);
+    border-radius: 4px;
+}
+
+/* Forms */
+
+input {
+    font: unset;
+    background: unset;
+    color: unset;
+    border: unset;
+}
+
+/* Quotes */
+
+blockquote {
+    font-family: "IBM Plex Serif", serif;
+    font-style: italic;
+    margin: 0.25em 0;
+    border-left: 2px solid;
+    padding: 0.75em;
+}
+
+blockquote h1,
+blockquote h2,
+blockquote h3,
+blockquote h4,
+blockquote h5,
+blockquote h6 {
+    text-transform: unset;
+}
+
+/* Main section */
+
+body > main {
+    width: 550px;
+    background-color:var(--color-background);
+    background-image: var(--background-blur);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 8px;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .5);
+    position: relative;
+}
+
+body > main input {
+    background: var(--color-faded);
+    /* color: #212121; */
+    border-radius: 8px;
+    overflow: hidden;
+
+    padding: 8px;
+    flex-grow: 1;
+    width: 100%;
+    box-sizing: border-box;
+    font-weight: 300;
+    margin-bottom: 8px;
+}
+
+body > main input:invalid {
+    font-style: italic;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+#sections {
+    display: grid;
+    border-top: 1px solid var(--color-faded);
+}
+
+#sections h1 {
+    font-size: 14px;
+}
+
+#sections section {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    margin: 4px;
+}
+
+#sections section ul {
+    padding: 0;
+    list-style: none;
+}
+
+#sections section ul li {
+    display: block;
+}
+
+#sections section hr {
+    margin: .5em -2px;
+    border: unset;
+    border-top: 1px solid var(--color-faded);
+}
+
+/*  */
+
+#bangs {
+    display: none;
+}
+
+#bangs p {
+    margin: 0 0 8px 0;
+}
+
+/* Image: avatar */
+
+.img-avatar {
+    border-radius: 50%;
+    margin: 2em 0 1em;
+}
+
+/* Dark mode */
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-background: #212121;
+        --color-foreground: #FAFAFA;
+        --color-faded: rgba(255, 255, 255, .2);
+        --color-link: rgb(225,190,231);
+        --background-blur: url(backgroundb-dark.jpg);
+    }
+}
+
+:root.prefer-dark {
+    --color-background: #212121;
+    --color-foreground: #FAFAFA;
+    --color-faded: rgba(255, 255, 255, .2);
+    --color-link: rgb(225,190,231);
+    --background-blur: url(backgroundb-dark.jpg);
+}

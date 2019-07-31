@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home page</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <main>
+        <form action="https://duckduckgo.com/" method="GET" id="search">
+            <input type="text" name="q" placeholder="Search the internet" require tabindex="0">
+        </form>
+
+        <div id="bangs" class="shown">
+            <p>Here are some <a href="https://duckduckgo.com/bangs" target="_blank">bangs</a> to try: <span id="bang-suggestion"><b>!g</b> Google</span></p>
+        </div>
+
+        <div id="sections">
+            <section>
+                <h1>General</h1>
+                <ul>
+                    <li><a href="https://messenger.com/">Messenger</a></li>
+                    <li><a href="https://youtube.com/">YouTube</a></li>
+                    <li><a href="https://medium.com/">Medium</a></li>
+                    <li><a href="https://calendar.google.com/">Calendar</a></li>
+                    <hr>
+                    <li><a href="https://drive.google.com/">Google Drive</a></li>
+                    <li><a href="https://onedrive.live.com/">OneDrive</a></li>
+                    <hr>
+                    <li><a href="https://www.metservice.com/towns-cities/wellington/wellington-city">Weather</a></li>
+                    <li><a href="https://www.metlink.org.nz/">Public Transport</a></li>
+                </ul>
+            </section>
+            <section>
+                <h1>Programming</h1>
+                <ul>
+                    <li><a href="https://github.com/thegreatrazz">GitHub</a></li>
+                    <li><a href="https://gitlab.com/thegreatrazz">GitLab</a></li>
+                    <hr>
+                    <li><a href="https://developer.mozilla.org/en-US/" title="Mozilla Developer Network">MDN web docs</a></li>
+                    <li><a href="https://nodejs.org/dist/latest-v12.x/docs/api/">Node.js</a></li>
+                    <li><a href="hhttps://en.cppreference.com/w/cpp">C++ Reference</a></li>
+                </ul>
+            </section>
+            <section>
+                <h1>University</h1>
+                <ul>
+                    <li><a href="https://ecs.victoria.ac.nz/Courses/COMP103_2019T2">COMP103</a></li>
+                    <li><a href="https://ecs.victoria.ac.nz/Courses/CGRA151_2019T2">CGRA151</a></li>
+                    <li><a href="https://ecs.victoria.ac.nz/Courses/ENGR110_2019T2">ENGR110</a></li>
+                    <li><a href="https://ecs.victoria.ac.nz/Courses/ENGR123_2019T2">ENGR123</a></li>
+                    <hr>
+                    <li><a href="https://www.victoria.ac.nz/student-records">Student Records</a></li>
+                    <li><a href="https://apps.ecs.vuw.ac.nz/submit/">Submission</a></li>
+                    <li><a href="https://apps.ecs.vuw.ac.nz/cgi-bin/studentmarks">Marks and Feedback</a></li>
+                    <hr>
+                    <li><a href="https://ecs.victoria.ac.nz/Main">ECS Wiki</a></li>
+                    <li><a href="https://gitlab.ecs.vuw.ac.nz/">ECS GitLab</a></li>
+                </ul>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>
