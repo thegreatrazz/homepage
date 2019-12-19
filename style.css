@@ -7,10 +7,9 @@
 :root {
     /* Colour vars */
     --color-background: #FAFAFA;
-    --color-faded: rgba(255, 255, 255, .5);
+    --color-faded: #e0e0e0;
     --color-foreground: #212121;
     --color-link: rgb(74,20,140);
-    --background-blur: url(backgroundb-light.jpg);
 
     /* Font vars */
     --font-text: "Inter", sans-serif;
@@ -33,6 +32,18 @@ body {
     align-items: center;
     margin: 0;
     min-height: 100vh;
+    overflow: hidden;
+}
+
+/* video */
+
+body > video {
+    position: absolute;
+    top: 0; left: 0;
+    height: 100%;
+    width: 177.77777778vh; /* 100 * 16 / 9 */
+    min-width: 100%;
+    min-height: 56.25vw; /* 100 * 9 / 16 */
 }
 
 /* Center container */
@@ -118,7 +129,6 @@ blockquote h6 {
 body > main {
     width: 550px;
     background-color:var(--color-background);
-    background-image: var(--background-blur);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -203,7 +213,6 @@ body > main input:invalid {
         --color-foreground: #FAFAFA;
         --color-faded: rgba(255, 255, 255, .2);
         --color-link: rgb(225,190,231);
-        --background-blur: url(backgroundb-dark.jpg);
     }
 }
 
@@ -212,5 +221,4 @@ body > main input:invalid {
     --color-foreground: #FAFAFA;
     --color-faded: rgba(255, 255, 255, .2);
     --color-link: rgb(225,190,231);
-    --background-blur: url(backgroundb-dark.jpg);
 }

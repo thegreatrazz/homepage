@@ -22,6 +22,15 @@ const bangs = [
 
     // UNIX
     [ '!die', 'Linux Manual Pages' ],
+    [ '!tldr', 'Manual page was <i>too long; didn\'t read</i>' ],
+    [ '!dman', 'Debian Manual Pages' ],
+    [ '!dpkg', 'Debian packages' ],
+    [ '!dbugs', 'Debian bugs' ],
+    [ '!debfiles', 'Which pkg does the file belong to?' ],
+    [ '!pacman', 'Arch Linux packages' ],
+    [ '!aur', 'Arch User Repositories' ],
+    [ '!archwiki', 'Arch Linux Wiki' ],
+    [ '!time', '' ]
     
     // Programming
     [ '!sx', 'Stack Exchange' ],
@@ -39,6 +48,10 @@ const bangs = [
     [ '!gtja', 'Translate to Japanese' ],
     [ '!gtja', '日本語にホンヤクする' ],
     [ '!gtja', '<code>ALL YOUR BASE ARE BELONG TO US</code>' ],
+
+    // Dictionary
+    [ '!jisho', '辞書&mdash;Japanese Dictionary' ],
+    [ '!dexonline', 'Dicționarul explicativ a limbei române' ]
 
     // Reading
     [ '!med', 'Medium' ],
