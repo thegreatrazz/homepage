@@ -1,8 +1,6 @@
 
-/* @import url('https://rsms.me/inter/inter.css');
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,700|IBM+Plex+Serif:400,400i,700,700i&display=swap'); */
-
 @import url('https://rsms.me/inter/inter.css');
+/* @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,700|IBM+Plex+Serif:400,400i,700,700i&display=swap'); */
 
 :root {
     /* Colour vars */
@@ -11,7 +9,7 @@
     --color-link: rgb(74,20,140);
 
     /* Font vars */
-    --font-text: "Manrope", sans-serif;
+    --font-text: "Inter", sans-serif;
     --font-code: "Cousine", monospace;
 
     /* Get going */
@@ -67,7 +65,7 @@ a:hover, a:active {
 /* Headings */
 
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 900;
+    font-weight: 800;
     text-transform: uppercase;
     margin: 0.5em 0;
 }
@@ -142,6 +140,9 @@ body > main input {
     border-radius: 8px;
     overflow: hidden;
 
+    -webkit-appearance: none;
+    appearance: none;
+
     padding: 8px;
     flex-grow: 1;
     width: 100%;
@@ -159,11 +160,12 @@ body > main input:hover {
 body > main input:focus {
     background: var(--color-background);
     opacity: 1;
+    outline: none;
 }
 
 body > main input:invalid {
     font-style: italic;
-    font-weight: 900;
+    font-weight: 800;
     text-transform: uppercase;
 }
 
@@ -174,6 +176,7 @@ body > main input:invalid {
 
 #sections h1 {
     font-size: 12px;
+    font-style: italic;
 }
 
 #sections section {
@@ -192,7 +195,7 @@ body > main input:invalid {
 }
 
 #sections section hr {
-    margin: 1em -2px;
+    margin: 0.5em -2px;
     border: unset;
 }
 
