@@ -1,0 +1,24 @@
+{
+  "name": "homepage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thegreatrazz/homepage.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thegreatrazz/homepage/issues"
+  },
+  "homepage": "https://github.com/thegreatrazz/homepage#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}
