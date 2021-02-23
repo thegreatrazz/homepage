@@ -1,25 +1,23 @@
 
 @import url('https://rsms.me/inter/inter.css');
-/* @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,700|IBM+Plex+Serif:400,400i,700,700i&display=swap'); */
+
+@color-background: rgba(22, 22, 22, 0.8);
+@color-foreground: #FAFAFA;
+@color-faded: fadeout(@color-background, 0.2);
+@color-link: rgb(225, 190, 231);
+@border-radius: 24px;
+@font-text: "Inter", sans-serif;
+@font-code: "Cousine", monospace;
 
 :root {
-    /* Colour vars */
-    --color-background: rgba(250, 250, 250, .8);
-    --color-foreground: #212121;
-    --color-link: rgb(74,20,140);
-
-    /* Font vars */
-    --font-text: "Inter", sans-serif;
-    --font-code: "Cousine", monospace;
-
-    /* Get going */
-    font-family: var(--font-text);
+    font-family: @font-text;
     font-size: 16px;
-    background: var(--color-background);
+    background: @color-background;
     background-image: url(background.jpg);
     background-size: cover;
     background-position: center;
-    color: var(--color-foreground);
+    background-attachment: fixed;
+    color: @color-foreground;
     letter-spacing: -0.011em;
 }
 
@@ -54,7 +52,7 @@ body > video {
 /* Links */
 
 a {
-    color: var(--color-link);
+    color: @color-link;
     text-decoration: none;
 }
 
@@ -80,13 +78,13 @@ h6 { font-size: 0.8em;  }
 /* Code */
 
 code {
-    font-family: var(--font-code);
+    font-family: @font-code;
 }
 
 pre {
-    font-family: var(--font-code);
-    background: var(--color-background);
-    color: var(--color-foreground);
+    font-family: @font-text;
+    background: @color-background;
+    color: @color-foreground;
     padding: 8px;
     border-radius: 4px;
 }
@@ -123,33 +121,35 @@ blockquote h6 {
 
 body > main {
     width: 550px;
-    background-color: var(--color-background);
+    background-color: rgba(0, 0, 0, .5);
+    background-image: url(background-blur.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     padding: 8px;
-    border-radius: 12px;
+    border-radius: @border-radius;
     box-shadow: 0 5px 10px rgba(0, 0, 0, .5);
     position: relative;
-    backdrop-filter: saturate(180%) blur(20px); /* stolen from apple.com */
+    // backdrop-filter: saturate(180%) blur(20px); /* stolen from apple.com */
 }
 
 body > main input {
     background: transparent;
-    /* color: #212121; */
-    border-radius: 8px;
+    color: @color-foreground;
+    border-radius: @border-radius + 8px;
     overflow: hidden;
 
     -webkit-appearance: none;
     appearance: none;
 
-    padding: 8px;
+    padding: 8px 16px;
     flex-grow: 1;
     width: 100%;
     box-sizing: border-box;
     font-weight: 300;
     margin-bottom: 8px;
-    transition: background-color 0.25s, opacity 0.25s;
+    transition: opacity 0.25s;
+    border: 1px solid @color-foreground;
     opacity: 0.5;
 }
 
@@ -158,7 +158,8 @@ body > main input:hover {
 }
 
 body > main input:focus {
-    background: var(--color-background);
+    background: @color-foreground;
+    color: @color-background;
     opacity: 1;
     outline: none;
 }
@@ -214,22 +215,4 @@ body > main input:invalid {
 .img-avatar {
     border-radius: 50%;
     margin: 2em 0 1em;
-}
-
-/* Dark mode */
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --color-background: rgba(22, 22, 22, .8);
-        --color-foreground: #FAFAFA;
-        --color-faded: rgba(255, 255, 255, .2);
-        --color-link: rgb(225,190,231);
-    }
-}
-
-:root.prefer-dark {
-    --color-background: rgba(22, 22, 22, .8); /* #212121; */
-    --color-foreground: #FAFAFA;
-    --color-faded: rgba(255, 255, 255, .2);
-    --color-link: rgb(225,190,231);
 }
