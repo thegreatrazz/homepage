@@ -1,111 +1,127 @@
-
-@import url('https://rsms.me/inter/inter.css');
-
 @color-background: rgba(22, 22, 22, 0.8);
-@color-foreground: #FAFAFA;
+@color-foreground: #fafafa;
 @color-faded: fadeout(@color-background, 0.2);
 @color-link: rgb(225, 190, 231);
 @border-radius: 24px;
-@font-text: "Inter", sans-serif;
-@font-code: "Cousine", monospace;
+@font-text: "Syne", sans-serif;
+@font-code: "Space Mono", monospace;
 
 :root {
-    font-family: @font-text;
-    font-size: 16px;
-    background: @color-background;
-    background-image: url(background.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    color: @color-foreground;
-    letter-spacing: -0.011em;
+  font-family: @font-text;
+  font-size: 16px;
+  background: @color-background;
+  background-image: url(background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: @color-foreground;
+  letter-spacing: -0.011em;
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    min-height: 100vh;
-    overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  min-height: 100vh;
+  overflow: hidden;
 }
 
 /* video */
 
 body > video {
-    position: absolute;
-    top: 0; left: 0;
-    height: 100%;
-    width: 177.77777778vh; /* 100 * 16 / 9 */
-    min-width: 100%;
-    min-height: 56.25vw; /* 100 * 9 / 16 */
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 177.77777778vh; /* 100 * 16 / 9 */
+  min-width: 100%;
+  min-height: 56.25vw; /* 100 * 9 / 16 */
 }
 
 /* Center container */
 
 .container {
-    width: 75%;
-    min-width: 300px;
-    margin: auto;
+  width: 75%;
+  min-width: 300px;
+  margin: auto;
 }
 
 /* Links */
 
 a {
-    color: @color-link;
-    text-decoration: none;
+  color: @color-link;
+  text-decoration: none;
 }
 
-a:hover, a:active {
-    text-decoration: underline;
+a:hover,
+a:active {
+  text-decoration: underline;
 }
 
 /* Headings */
 
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 800;
-    text-transform: uppercase;
-    margin: 0.5em 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0.5em 0;
 }
 
-h1 { font-size: 2em;    }
-h2 { font-size: 1.75em; }
-h3 { font-size: 1.5em;  }
-h4 { font-size: 1.25em; }
-h5 { font-size: 1em;    }
-h6 { font-size: 0.8em;  }
+h1 {
+  font-size: 2em;
+}
+h2 {
+  font-size: 1.75em;
+}
+h3 {
+  font-size: 1.5em;
+}
+h4 {
+  font-size: 1.25em;
+}
+h5 {
+  font-size: 1em;
+}
+h6 {
+  font-size: 0.8em;
+}
 
 /* Code */
 
 code {
-    font-family: @font-code;
+  font-family: @font-code;
 }
 
 pre {
-    font-family: @font-text;
-    background: @color-background;
-    color: @color-foreground;
-    padding: 8px;
-    border-radius: 4px;
+  font-family: @font-text;
+  background: @color-background;
+  color: @color-foreground;
+  padding: 8px;
+  border-radius: 4px;
 }
 
 /* Forms */
 
 input {
-    font: unset;
-    background: unset;
-    color: unset;
-    border: unset;
+  font: unset;
+  background: unset;
+  color: unset;
+  border: unset;
 }
 
 /* Quotes */
 
 blockquote {
-    font-family: "IBM Plex Serif", serif;
-    font-style: italic;
-    margin: 0.25em 0;
-    border-left: 2px solid;
-    padding: 0.75em;
+  font-family: "IBM Plex Serif", serif;
+  font-style: italic;
+  margin: 0.25em 0;
+  border-left: 2px solid;
+  padding: 0.75em;
 }
 
 blockquote h1,
@@ -114,105 +130,102 @@ blockquote h3,
 blockquote h4,
 blockquote h5,
 blockquote h6 {
-    text-transform: unset;
+  text-transform: unset;
 }
 
 /* Main section */
 
 body > main {
-    width: 550px;
-    background-color: rgba(0, 0, 0, .5);
-    background-image: url(background-blur.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    padding: 8px;
-    border-radius: @border-radius;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, .5);
-    position: relative;
-    // backdrop-filter: saturate(180%) blur(20px); /* stolen from apple.com */
+  width: 550px;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-image: url(background-blur.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 8px;
+  border-radius: @border-radius;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  position: relative;
+  // backdrop-filter: saturate(180%) blur(20px); /* stolen from apple.com */
 }
 
 body > main input {
-    background: transparent;
-    color: @color-foreground;
-    border-radius: @border-radius + 8px;
-    overflow: hidden;
+  background: @color-foreground;
+  color: @color-background;
+  border-radius: @border-radius + 8px;
+  overflow: hidden;
 
-    -webkit-appearance: none;
-    appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
 
-    padding: 8px 16px;
-    flex-grow: 1;
-    width: 100%;
-    box-sizing: border-box;
-    font-weight: 300;
-    margin-bottom: 8px;
-    transition: opacity 0.25s;
-    border: 1px solid @color-foreground;
-    opacity: 0.5;
+  padding: 6px 14px;
+  flex-grow: 1;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 8px;
+  border: 2px solid @color-foreground;
+  opacity: 0.5;
 }
 
 body > main input:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 body > main input:focus {
-    background: @color-foreground;
-    color: @color-background;
-    opacity: 1;
-    outline: none;
+  opacity: 1;
+  outline: none;
+  font: unset;
 }
 
 body > main input:invalid {
-    font-style: italic;
-    font-weight: 800;
-    text-transform: uppercase;
+  font-style: italic;
+  font-weight: 800;
+  text-transform: uppercase;
 }
 
 #sections {
-    display: grid;
-    /* margin-top: 8px; */
+  display: grid;
+  /* margin-top: 8px; */
 }
 
 #sections h1 {
-    font-size: 12px;
-    font-style: italic;
+  font-size: 12px;
+  font-weight: 700;
 }
 
 #sections section {
-    grid-row-start: 1;
-    grid-row-end: 3;
-    margin: 4px;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  margin: 4px;
 }
 
 #sections section ul {
-    padding: 0;
-    list-style: none;
+  padding: 0;
+  list-style: none;
 }
 
 #sections section ul li {
-    display: block;
+  display: block;
 }
 
 #sections section hr {
-    margin: 0.5em -2px;
-    border: unset;
+  margin: 0.5em -2px;
+  border: unset;
 }
 
 /*  */
 
 #bangs {
-    display: none;
+  display: none;
 }
 
 #bangs p {
-    margin: 0 0 8px 0;
+  margin: 0 0 8px 0;
 }
 
 /* Image: avatar */
 
 .img-avatar {
-    border-radius: 50%;
-    margin: 2em 0 1em;
+  border-radius: 50%;
+  margin: 2em 0 1em;
 }

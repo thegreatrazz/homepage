@@ -1,6 +1,6 @@
 import $ from "jquery";
 
-const bangs = [
+const bangs: [bang: string, description: string][] = [
   // Google stuff
   ["!g", "Google"],
   ["!gphotos", "Google Photos"],
@@ -12,7 +12,6 @@ const bangs = [
 
   // tools
   ["!bitly", "Shorten links"],
-  ["!isitup", "Is the website up?"],
   ["!isitup", "Is the website up?"],
 
   // Media consumption
@@ -37,10 +36,10 @@ const bangs = [
   ["!pacman", "Arch Linux packages"],
   ["!aur", "Arch User Repositories"],
   ["!archwiki", "Arch Linux Wiki"],
-  ["!time", "UNIX timestamp"][
-    // Programming
-    ("!sx", "Stack Exchange")
-  ],
+  ["!time", "UNIX timestamp"],
+
+  // Programming
+  ["!sx", "Stack Exchange"],
   ["!npm", "Node Package Manager"],
 
   // Maths
@@ -58,21 +57,18 @@ const bangs = [
 
   // Dictionary
   ["!jisho", "辞書 Japanese Dictionary"],
-  ["!dexonline", "Dicționarul explicativ a limbei române"][
-    // Reading
-    ("!med", "Medium")
-  ],
+  ["!dexonline", "Dicționarul explicativ a limbei române"],
+
+  // Reading
+  ["!med", "Medium"],
 ];
 
-$(() => {
-  $("#search input").focus(() => {
-    var index = Math.floor(Math.random() * bangs.length);
-    var bang = bangs[index];
-
-    $("#search input").attr("placeholder", bang[0] + " — " + bang[1]);
-  });
-
-  $("#search input").blur(() => {
-    $("#search input").attr("placeholder", "Search the internet");
-  });
-});
+let searchInput = document.querySelector("#search input") as HTMLInputElement;
+let searchInputDefaultPlaceholder = searchInput.getAttribute("placeholder");
+searchInput.onfocus = () => {
+  let index = Math.floor(Math.random() * bangs.length);
+  let bang = bangs[index];
+  searchInput.setAttribute("placeholder", `${bang[0]} — ${bang[1]}`);
+};
+searchInput.onblur = () =>
+  searchInput.setAttribute("placeholder", searchInputDefaultPlaceholder);
