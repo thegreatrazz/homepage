@@ -1,0 +1,139 @@
+[
+  {
+    "title": "General",
+    "links": [
+      {
+        "name": "Notion",
+        "href": "https://www.notion.so/"
+      },
+      {
+        "name": "Calendar",
+        "href": "https://calendar.google.com/"
+      },
+      null,
+      {
+        "name": "Messenger",
+        "href": "https://messenger.com/"
+      },
+      {
+        "name": "YouTube",
+        "href": "https://youtube.com/"
+      },
+      {
+        "name": "Medium",
+        "href": "https://medium.com/"
+      },
+      null,
+      {
+        "name": "Google Drive",
+        "href": "https://drive.google.com/"
+      },
+      {
+        "name": "OneDrive",
+        "href": "https://onedrive.live.com/"
+      },
+      null,
+      {
+        "name": "Weather",
+        "href": "https://www.metservice.com/towns-cities/wellington/wellington-city"
+      },
+      {
+        "name": "Public Transport",
+        "href": "https://www.metlink.org.nz/"
+      }
+    ]
+  },
+  {
+    "title": "Programming",
+    "links": [
+      {
+        "name": "GitHub",
+        "href": "https://github.com/"
+      },
+      {
+        "name": "GitLab",
+        "href": "https://gitlab.com/"
+      },
+      null,
+      {
+        "name": "JavaScript",
+        "href": "https://developer.mozilla.org/en-US/"
+      },
+      {
+        "name": "Node.js",
+        "href": "https://nodejs.org/dist/latest-v12.x/docs/api/"
+      },
+      {
+        "name": "C/C++",
+        "href": "https://en.cppreference.com/w/cpp"
+      },
+      {
+        "name": "C# / .NET",
+        "href": "https://docs.microsoft.com/en-us/dotnet/csharp/"
+      },
+      {
+        "name": "Java",
+        "href": "https://docs.oracle.com/javase/8/"
+      }
+    ]
+  },
+  {
+    "title": "University",
+    "links": [
+      {
+        "name": "CYBR371",
+        "href": "https://ecs.wgtn.ac.nz/Courses/CYBR371_2021T1"
+      },
+      {
+        "name": "ENGR301",
+        "href": "https://ecs.wgtn.ac.nz/Courses/ENGR301_2021T1"
+      },
+      {
+        "name": "NWEN303",
+        "href": "https://ecs.wgtn.ac.nz/Courses/NWEN303_2021T1"
+      },
+      {
+        "name": "SWEN301",
+        "href": "https://ecs.wgtn.ac.nz/Courses/SWEN301_2021T1"
+      },
+      {
+        "name": "Work Experience",
+        "href": "https://ecs.wgtn.ac.nz/Main/WorkExperience/WebHome"
+      },
+      {
+        "name": "COMP261 (Tutor)",
+        "href": "https://ecs.wgtn.ac.nz/Courses/COMP261_2021T1"
+      },
+      null,
+      {
+        "name": "Student Records",
+        "href": "https://www.victoria.ac.nz/student-records"
+      },
+      {
+        "name": "Blackboard",
+        "href": "https://www.victoria.ac.nz/student-records"
+      },
+      {
+        "name": "ECS Submission",
+        "href": "https://apps.ecs.vuw.ac.nz/submit/"
+      },
+      {
+        "name": "ECS Marks and Feedback",
+        "href": "https://apps.ecs.vuw.ac.nz/cgi-bin/studentmarks"
+      },
+      null,
+      {
+        "name": "ECS Wiki",
+        "href": "https://ecs.victoria.ac.nz/Main"
+      },
+      {
+        "name": "ECS GitLab",
+        "href": "https://gitlab.ecs.vuw.ac.nz/"
+      },
+      {
+        "name": "ECS Mattermost",
+        "href": "https://mattermost.ecs.vuw.ac.nz/"
+      }
+    ]
+  }
+]

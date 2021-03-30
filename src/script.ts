@@ -1,4 +1,31 @@
 import $ from "jquery";
+import links from "./links.json";
+
+//
+// load the links onto the page
+//
+
+console.log({ links });
+let sectionContainer = $("body > main");
+for (const section of links) {
+  let sectionEl = $("<section />").append($("<h1 />").text(section.title));
+  let listEl = $("<ul />").appendTo(sectionEl);
+  for (const link of section.links) {
+    let listItemEl = $("<li />");
+    if (link === null) {
+      listItemEl.addClass("separator").appendTo(listEl);
+      continue;
+    }
+    listItemEl
+      .append($("<a />").attr("href", link.href).text(link.name))
+      .appendTo(listEl);
+  }
+  sectionEl.appendTo(sectionContainer);
+}
+
+//
+// search the internet box
+//
 
 const bangs: [bang: string, description: string][] = [
   // Google stuff

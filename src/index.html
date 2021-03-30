@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Home page</title>
+    <title>Homepage</title>
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Domine:wght@400;500;700&family=Libre+Franklin:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.less" />
@@ -18,120 +18,20 @@
 
   <body>
     <!-- <video src="video.mp4" autoplay loop></video> -->
-    <main>
-      <form action="https://duckduckgo.com/" method="GET" id="search">
-        <input
-          type="text"
-          name="q"
-          placeholder="Search the internet"
-          require
-          tabindex="0"
-        />
-      </form>
-
-      <div id="sections">
-        <section>
-          <h1>General</h1>
-          <ul>
-            <li><a href="https://www.notion.so/">Notion</a></li>
-            <li><a href="https://calendar.google.com/">Calendar</a></li>
-            <hr />
-            <li><a href="https://messenger.com/">Messenger</a></li>
-            <li><a href="https://youtube.com/">YouTube</a></li>
-            <li><a href="https://medium.com/">Medium</a></li>
-            <hr />
-            <li><a href="https://drive.google.com/">Google Drive</a></li>
-            <li><a href="https://onedrive.live.com/">OneDrive</a></li>
-            <hr />
-            <li>
-              <a
-                href="https://www.metservice.com/towns-cities/wellington/wellington-city"
-                >Weather</a
-              >
-            </li>
-            <li><a href="https://www.metlink.org.nz/">Public Transport</a></li>
-          </ul>
-        </section>
-        <section>
-          <h1>Programming</h1>
-          <ul>
-            <li><a href="https://github.com/thegreatrazz">GitHub</a></li>
-            <li><a href="https://gitlab.com/thegreatrazz">GitLab</a></li>
-            <hr />
-            <li>
-              <a
-                href="https://developer.mozilla.org/en-US/"
-                title="Mozilla Developer Network"
-                >JavaScript</a
-              >
-            </li>
-            <li>
-              <a href="https://nodejs.org/dist/latest-v12.x/docs/api/"
-                >Node.js</a
-              >
-            </li>
-            <li><a href="https://en.cppreference.com/w/cpp">C/C++</a></li>
-            <li><a href="https://valadoc.org/">Vala</a></li>
-            <li><a href="https://docs.oracle.com/javase/8/">Java 8</a></li>
-            <li>
-              <a href="https://docs.oracle.com/en/java/javase/14/index.html"
-                >Java 14</a
-              >
-            </li>
-          </ul>
-        </section>
-        <section>
-          <h1>University</h1>
-          <ul>
-            <li>
-              <a href="https://ecs.wgtn.ac.nz/Courses/CYBR371_2021T1"
-                >CYBR371</a
-              >
-            </li>
-            <li>
-              <a href="https://ecs.wgtn.ac.nz/Courses/ENGR301_2021T1"
-                >ENGR301</a
-              >
-            </li>
-            <li>
-              <a href="https://ecs.wgtn.ac.nz/Courses/NWEN303_2021T1"
-                >NWEN303</a
-              >
-            </li>
-            <li>
-              <a href="https://ecs.wgtn.ac.nz/Courses/SWEN301_2021T1"
-                >SWEN301</a
-              >
-            </li>
-            <li>
-              <a href="https://ecs.wgtn.ac.nz/Main/WorkExperience/WebHome"
-                >Work Experience</a
-              >
-            </li>
-            <li>
-              <a href="https://ecs.wgtn.ac.nz/Courses/COMP261_2021T1"
-                >COMP261 👨‍🏫</a
-              >
-            </li>
-            <hr />
-            <li>
-              <a href="https://www.victoria.ac.nz/student-records"
-                >Student Records</a
-              >
-            </li>
-            <li><a href="https://blackboard.vuw.ac.nz/">Blackboard</a></li>
-            <li><a href="https://apps.ecs.vuw.ac.nz/submit/">Submission</a></li>
-            <li>
-              <a href="https://apps.ecs.vuw.ac.nz/cgi-bin/studentmarks"
-                >Marks and Feedback</a
-              >
-            </li>
-            <hr />
-            <li><a href="https://ecs.victoria.ac.nz/Main">ECS Wiki</a></li>
-            <li><a href="https://gitlab.ecs.vuw.ac.nz/">ECS GitLab</a></li>
-          </ul>
-        </section>
+    <header>
+      <div class="container">
+        <form action="https://duckduckgo.com/" method="GET" id="search">
+          <input
+            type="text"
+            name="q"
+            placeholder="Search the internet"
+            require
+            tabindex="0"
+          />
+        </form>
       </div>
-    </main>
+    </header>
+
+    <main class="container"></main>
   </body>
 </html>
