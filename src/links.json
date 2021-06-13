@@ -81,28 +81,24 @@
     "title": "University",
     "links": [
       {
-        "name": "CYBR371",
-        "href": "https://ecs.wgtn.ac.nz/Courses/CYBR371_2021T1"
+        "name": "ENGR302",
+        "href": "https://ecs.wgtn.ac.nz/Courses/ENGR302_2021T1"
       },
       {
-        "name": "ENGR301",
-        "href": "https://ecs.wgtn.ac.nz/Courses/ENGR301_2021T1"
+        "name": "NWEN301",
+        "href": "https://ecs.wgtn.ac.nz/Courses/NWEN301_2021T1"
       },
       {
-        "name": "NWEN303",
-        "href": "https://ecs.wgtn.ac.nz/Courses/NWEN303_2021T1"
+        "name": "SWEN324",
+        "href": "https://ecs.wgtn.ac.nz/Courses/SWEN324_2021T1"
       },
       {
-        "name": "SWEN301",
-        "href": "https://ecs.wgtn.ac.nz/Courses/SWEN301_2021T1"
+        "name": "SWEN325",
+        "href": "https://ecs.wgtn.ac.nz/Courses/SWEN325_2021T1"
       },
       {
         "name": "Work Experience",
         "href": "https://ecs.wgtn.ac.nz/Main/WorkExperience/WebHome"
-      },
-      {
-        "name": "COMP261 (Tutor)",
-        "href": "https://ecs.wgtn.ac.nz/Courses/COMP261_2021T1"
       },
       null,
       {
