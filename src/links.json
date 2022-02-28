@@ -81,20 +81,20 @@
     "title": "University",
     "links": [
       {
-        "name": "ENGR302",
-        "href": "https://ecs.wgtn.ac.nz/Courses/ENGR302_2021T2"
+        "name": "ENGR401",
+        "href": "https://ecs.wgtn.ac.nz/Courses/ENGR401_2022T1"
       },
       {
-        "name": "NWEN301",
-        "href": "https://ecs.wgtn.ac.nz/Courses/NWEN301_2021T2"
+        "name": "ENGR489",
+        "href": "https://ecs.wgtn.ac.nz/Courses/ENGR489_2022T1"
       },
       {
-        "name": "SWEN324",
-        "href": "https://ecs.wgtn.ac.nz/Courses/SWEN324_2021T2"
+        "name": "SWEN431",
+        "href": "https://ecs.wgtn.ac.nz/Courses/SWEN431_2022T1"
       },
       {
-        "name": "SWEN325",
-        "href": "https://ecs.wgtn.ac.nz/Courses/SWEN325_2021T2"
+        "name": "AIML420",
+        "href": "https://ecs.wgtn.ac.nz/Courses/AIML420_2022T1"
       },
       {
         "name": "Work Experience",
